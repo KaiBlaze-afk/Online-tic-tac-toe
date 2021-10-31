@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(90rad, orange, rgb(253, 80, 80), pink);
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(62, 2, 158);
+}
+#container {
+  height: 100vmin;
+  width: 100vmin;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 105px;
+  text-align: center;
+}
+.box:nth-child(1) {
+  border-bottom: 10px solid #012933;
+  border-right: 10px solid #012933;
+}
+.box:nth-child(2) {
+  border-bottom: 10px solid #012933;
+}
+.box:nth-child(3) {
+  border-bottom: 10px solid #012933;
+  border-left: 10px solid #012933;
+}
+.box:nth-child(4) {
+  border-bottom: 10px solid #012933;
+  border-right: 10px solid #012933;
+}
+.box:nth-child(5) {
+  border-bottom: 10px solid #012933;
+}
+.box:nth-child(6) {
+  border-bottom: 10px solid #012933;
+  border-left: 10px solid #012933;
+}
+.box:nth-child(7) {
+  border-right: 10px solid #012933;
+}
+.box:nth-child(9) {
+  border-left: 10px solid #012933;
+}
+#info {
+  font-size: 30px;
+  border: 3px solid brown;
+  background-color: rgb(226, 102, 0);
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+@media screen and (min-width:700px){
+    body{
+        background: linear-gradient(90rad,lime, cyan);
+    }
+    #container{
+        height: 70vh;
+        width: 70vh;
+        font-size: 155px;
+    }
+}
