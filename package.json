@@ -4,8 +4,8 @@
   "description": "",
   "main": "Server.js",
   "scripts": {
-    "start": "node Server.js",
-    "dev": "nodemon server"
+    "start": "node Server",
+    "dev": "nodemon Server"
   },
   "author": "Kai",
   "license": "ISC",

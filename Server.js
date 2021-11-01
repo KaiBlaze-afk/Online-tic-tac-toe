@@ -39,6 +39,7 @@ io.on("connection", (socket) => {
       socket.broadcast.emit("response", "nine");
     }
   });
+let playercounter 
   socket.on("clear", (signal) => {
     socket.broadcast.emit("clear", "clear");
   });

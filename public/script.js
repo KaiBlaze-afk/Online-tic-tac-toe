@@ -12,6 +12,16 @@ let ni = document.querySelector(".box:nth-child(9)");
 
 let PlayerNum = 0;
 const socket = io();
+dice = () => {
+  roll == "X" ? (roll = "O") : (roll = "X");
+  document.getElementById("info").innerHTML = roll + "'s Turn";
+};
+
+setup=()=>{
+  roll = "X"
+  document.getElementById("info").innerHTML = roll + "'s Turn";
+}
+
 socket.on("clear", (signal) => {
   if (signal == "clear") {
     on.innerHTML = "";
@@ -23,12 +33,9 @@ socket.on("clear", (signal) => {
     se.innerHTML = "";
     ei.innerHTML = "";
     ni.innerHTML = "";
+    setup()
   }
 });
-dice = () => {
-  roll == "X" ? (roll = "O") : (roll = "X");
-  document.getElementById("info").innerHTML = roll + "'s Turn";
-};
 
 socket.on("response", (xyz) => {
   if (xyz == "one") {
