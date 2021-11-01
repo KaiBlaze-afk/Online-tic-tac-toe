@@ -4,7 +4,7 @@
   "description": "",
   "main": "Server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node Server.js",
     "dev": "nodemon server"
   },
   "author": "Kai",
